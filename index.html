@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <h1>Test</h1>
-    <p>Hello world!</p>
+    <h1>gh-pages</h1>
+    <p>How to upload static sites to github pages!</p>
+    
+    In a new directory:
 
-
+    $ npx gh-pages -d .
+    
+    You can create a shortcut in your packege.json:
+    "scripts": {
+        "deploy": "gh-pages -d ."
+      }
+    So, after that you can call:
+    $ npm run deploy 
 
     <script src="js/main.js"></script>
 </body>
