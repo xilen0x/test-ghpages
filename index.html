@@ -1,71 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>How to upload static sites to github pages!</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <h1>How to upload static sites to github pages!</h1>
-    <br>
 
-    </br>
-    
-   <div>
-    In a new directory, open the terminal and:
-    <br>
-    $ npm init -y
-    </br>
-    
-    Install gh-pages module:
-    
-    $ npm i gh-pages
 
-    Create the .gitignore file and add the node_modules line in it.
-    <br>
-Create a repo in github:
-Copy the line of your repo:
-    
-example:
-    git remote add origin git@github.com:user/name-repo.git
-and past.
+    <div class="card_body">
+        <div>
+            <h1 class="card_title">How to upload static sites to github pages!</h1>
+            <div class="entry-meta">
+                <span class="byline">
+                    <span class="author vcard"><i class="fa fa-user"></i><a class="url fn n"
+                            href="https://databook.one/author/xilenox/">xilenox</a></span>
+                </span>
+            </div><!-- .entry-meta -->
+        </div>
 
-Initializing the repository:
-    $ git init
-    $ git add .
-    $ git commit -m "first commit"
-    $ git push -u origin master #(or main, depend of your repo)
+        <div class="entry-content">
+            <li>
+                <li>
+                    <h3>Set up the repository</h3>
+                    <pre class="highlight">
+                        <code> 
 
-</br>
-and run:
-$ npx gh-pages -d .
-    .
-    </br>
-   </div>
 
-   <div>
-    You can create a shortcut in your packege.json:
-    <br>
-    .
-    </br>
+                            In a new directory, open the terminal and:
+                            $ npm init -y
+                            </br>
+                    
+                            Install gh-pages module:
+                    
+                            $ npm i gh-pages
+                    
+                            Create the .gitignore file and add the node_modules line in it.
+                            <br>
+                            Create a repo in github:
+                            Copy the line of your repo:
+                    
+                            example:
+                            git remote add origin git@github.com:user/name-repo.git
+                            and past.
+                    
+                            Initializing the repository:
+                            $ git init
+                            $ git add .
+                            $ git commit -m "first commit"
+                            $ git push -u origin master #(or main, depend of your repo)
+                    
+                            </br>
+                            and run:
+                            $ npx gh-pages -d .
 
-    "scripts": {
-        "deploy": "gh-pages -d ."
-      }
-      <br>
-      .
-    </br>
-    
-    So, after that you can call:
-    <br>
-    .
-    </br>
-    $ npm run deploy 
-   </div>
-    
+
+                        </code>
+                    </pre>
+                </li>
+            </li>
+        </div>
+
+        <div class="entry-content">
+            <li>
+                <li>
+                    <h3>Create a shortcut</h3>
+                    <pre class="highlight">
+                        <code> 
+
+                            You can create a shortcut in your packege.json:
+
+                    
+                            "scripts": {
+                            "deploy": "gh-pages -d ."
+                            }
+
+                    
+                            So, after that you can call:
+
+                            $ npm run deploy
+
+
+                        </code>
+                    </pre>
+                </li>
+            </li>
+        </div>
+
+    </div>
+
+
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
