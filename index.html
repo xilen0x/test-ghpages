@@ -10,19 +10,42 @@
 <body>
     <h1>How to upload static sites to github pages!</h1>
     <br>
-    .
+
     </br>
     
-    In a new directory:
+   <div>
+    In a new directory, open the terminal and:
     <br>
-    .
+    $ npm init -y
     </br>
     
-    $ npx gh-pages -d .
+    Install gh-pages module:
+    
+    $ npm i gh-pages
+
+    Create the .gitignore file and add the node_modules line in it.
     <br>
+Create a repo in github:
+Copy the line of your repo:
+    
+example:
+    git remote add origin git@github.com:user/name-repo.git
+and past.
+
+Initializing the repository:
+    $ git init
+    $ git add .
+    $ git commit -m "first commit"
+    $ git push -u origin master #(or main, depend of your repo)
+
+</br>
+and run:
+$ npx gh-pages -d .
     .
     </br>
-    
+   </div>
+
+   <div>
     You can create a shortcut in your packege.json:
     <br>
     .
@@ -40,6 +63,8 @@
     .
     </br>
     $ npm run deploy 
+   </div>
+    
 
     <script src="js/main.js"></script>
 </body>
